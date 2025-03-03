@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Pin
+  - IgnorePipe
+  - Enemy
+  - Bomb
+  - Stone
+  - Glass
+  - DynamicParticle
+  - Thorn
+  - FISH
+  - LC
+  - LF
+  - canvas
+  - LEVEL
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - MetaBalls
+  - WaterLayer
+  - Bgs
+  - lava
+  - WaterCollider
+  - Outline
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: over1
+    uniqueID: 3961868199
+    locked: 0
