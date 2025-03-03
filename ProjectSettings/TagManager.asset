@@ -17,6 +17,8 @@ TagManager:
   - LF
   - canvas
   - LEVEL
+  - Metaball_liquid
+  - BgCam
   layers:
   - Default
   - TransparentFX

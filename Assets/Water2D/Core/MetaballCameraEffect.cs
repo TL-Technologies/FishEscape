@@ -40,6 +40,10 @@ namespace UnityStandardAssets.ImageEffects
 
         public Camera bgCamera;
 
+        private void Awake()
+        {
+            bgCamera = GameObject.FindGameObjectWithTag("BgCam").GetComponent<Camera>();
+        }
 
         RenderTexture bgTargetTexture;
 

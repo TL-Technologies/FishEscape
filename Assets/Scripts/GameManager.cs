@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 		level_no = PlayerPrefs.GetInt("LEVEL",level_no);
 		lv.text = "LEVEL :"+level_no;
 		if(!test)
-		level[level_no].SetActive(true);
+		level[level_no]?.SetActive(true);
 		Invoke("LOadingOut",1f);
 	}
     
@@ -58,28 +58,17 @@ public class GameManager : MonoBehaviour
 		PlayerPrefs.SetInt("LEVEL",level_no);
 		Application.LoadLevel(0);
 
-		//abid
-		UnityAdsManager.Instance.ShowInterstitialAd();
 
 	}
 
 	public void Restart()
 	{
-		//	ads.ShowInterstitial();
 		loading.SetTrigger("out");
 		Application.LoadLevel(0);
 
-		//abid
-		UnityAdsManager.Instance.ShowInterstitialAd();
+	
 	}
 
-	public void Skip()
-	{
-		//	ads.ShowRewardedAd();
-		//abid
-		UnityAdsManager.Instance.ShowRewardedVideo();
-
-	}
 
 	public void rewardSkipLevel()
     {
@@ -95,4 +84,12 @@ public class GameManager : MonoBehaviour
 		PlayerPrefs.SetInt("LEVEL", level_no);
 		Application.LoadLevel(0);
 	}
+
+
+	[ContextMenu("FDJH")]
+	public void sas()
+	{
+		PlayerPrefs.DeleteAll();
+	}
+	
 }

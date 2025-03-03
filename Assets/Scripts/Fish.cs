@@ -93,14 +93,14 @@ public class Fish : MonoBehaviour
 	
 	public void Win()
 	{
-		GameObject.FindGameObjectWithTag("LEVEL").SetActive(false);
-			GameObject.FindGameObjectWithTag("canvas").transform.GetChild(5).gameObject.SetActive(true);
+		    GameObject.FindGameObjectWithTag("LEVEL")?.SetActive(false);
+			GameObject.FindGameObjectWithTag("canvas")?.transform.GetChild(5).gameObject.SetActive(true);
 	}
 	
 	public void Loose()
 	{
-			GameObject.FindGameObjectWithTag("LEVEL").SetActive(false);
-			GameObject.FindGameObjectWithTag("canvas").transform.GetChild(4).gameObject.SetActive(true);
+			GameObject.FindGameObjectWithTag("LEVEL")?.SetActive(false);
+			GameObject.FindGameObjectWithTag("canvas")?.transform.GetChild(4).gameObject.SetActive(true);
 
 	}
 }
